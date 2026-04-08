@@ -4,7 +4,7 @@ import random
 st.title("Gas Laws Quiz")
 
 st.write("This quiz contains 4 questions. The figure Gas_Laws.png is used for reference only.")
-st.image("Gas_Laws.png", caption="Gas Law Equations A–D")
+st.image("Gas_Laws.png", caption="Gas Law Equations")
 
 # ---------------------------------------------------------
 # QUIZ DATA (fixed order, rotating answer positions)
@@ -51,17 +51,17 @@ questions = [
 # ---------------------------------------------------------
 # RANDOM ROTATION OF ANSWERS A/B/C
 # ---------------------------------------------------------
-def rotate_choices(choice_dict, correct_key):
-    labels = ["A", "B", "C"]
-    random.shuffle(labels)
+# def rotate_choices(choice_dict, correct_key):
+#    labels = ["A", "B", "C"]
+#   random.shuffle(labels)
 
     # Map shuffled labels to original choices
-    shuffled = {label: choice_dict[orig] for label, orig in zip(labels, ["A", "B", "C"])}
+    #  shuffled = {label: choice_dict[orig] for label, orig in zip(labels, ["A", "B", "C"])}
 
     # Determine which new label holds the correct answer
-    correct_label = labels[["A", "B", "C"].index(correct_key)]
+    # correct_label = labels[["A", "B", "C"].index(correct_key)]
 
-    return shuffled, correct_label
+    #return shuffled, correct_label
 
 # ---------------------------------------------------------
 # DISPLAY QUESTIONS
