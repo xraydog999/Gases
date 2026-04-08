@@ -10,7 +10,7 @@ st.image("Gas_Laws.png", caption="Gas Law Equations A–D")
 # ---------------------------------------------------------
 questions = [
     {
-        "question": "1. At constant temperature, a gas changes from 2.6 L at 2 atm to a new pressure of 0.5 atm. Compute the new volume.",
+        "question": "1. At constant temperature, a gas changes from 2.6 L at 2.0 atm to a new pressure of 0.50 atm. Compute the new volume.",
         "choices": {
             "A": "2.6 L",
             "B": "5.2 L",
@@ -19,7 +19,7 @@ questions = [
         "correct": "C"
     },
     {
-        "question": "2. At constant pressure, a gas at 0.20 L and 100 K changes to 250 K. Find the new volume.",
+        "question": "2. At constant pressure, a gas at 0.20 L and 100.0 K changes to 250. K. Find the new volume.",
         "choices": {
             "A": "0.50 L",
             "B": "0.32 L",
@@ -28,7 +28,7 @@ questions = [
         "correct": "A"
     },
     {
-        "question": "3. A gas at 1 atm, 200 K, and 1.2 L changes to 150 K and 0.5 atm. Compute the new volume.",
+        "question": "3. A gas at 1.0 atm, 200. K, and 1.2 L changes to 150 K and 0.50 atm. Compute the new volume.",
         "choices": {
             "A": "0.9 L",
             "B": "1.8 L",
@@ -37,11 +37,11 @@ questions = [
         "correct": "B"
     },
     {
-        "question": "4. Find the volume occupied by 0.2 moles of an ideal gas at 27°C and 0.5 atm.",
+        "question": "4. Find the volume occupied by 0.20 moles of an ideal gas at 27°C and 0.50 atm.",
         "choices": {
             "A": "49.2 L",
             "B": "24.6 L",
-            "C": "98.5 L"
+            "C": "9.8 L"
         },
         "correct": "C"
     }
