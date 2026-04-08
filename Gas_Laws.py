@@ -3,8 +3,8 @@ import random
 
 st.title("Gases Quiz")
 
-st.write("This quiz contains 11 questions. The first seven use the attached figure (Graphs.png).")
-st.image("Graphs.png", caption="Graphs A, B, C, and D")
+st.write("This quiz contains 11 questions. The first seven use the attached figure (Gas_Laws.png).")
+st.image("Gas_Laws.png", caption="Graphs A, B, C, and D")
 
 # ---------------------------------------------------------
 # QUIZ DATA (fixed order, but answer positions will rotate)
@@ -71,20 +71,10 @@ questions = [
 # RANDOM ROTATION OF ANSWERS A/B/C
 # ---------------------------------------------------------
 def rotate_three_choices(correct_answer, wrong_answers):
-    """
-    Takes the correct answer and two wrong answers,
-    shuffles them, and assigns them to A, B, C.
-    Returns:
-        labels -> ["A", "B", "C"]
-        displayed_answers -> shuffled answers
-        correct_label -> "A" or "B" or "C"
-    """
     displayed = [correct_answer] + wrong_answers
     random.shuffle(displayed)
-
     correct_label = ["A", "B", "C"][displayed.index(correct_answer)]
     return ["A", "B", "C"], displayed, correct_label
-
 
 # ---------------------------------------------------------
 # DISPLAY QUESTIONS
@@ -96,13 +86,10 @@ st.subheader("Answer the questions below:")
 
 for i, q in enumerate(questions):
 
-    # For graph questions, the "correct" is A/B/C/D but we only display A/B/C
-    # So we treat the correct answer as a label, not a text answer.
     if q["correct"] in ["A", "B", "C", "D"]:
         correct_text = q["correct"]
         wrong_texts = [x for x in ["A", "B", "C"] if x != correct_text][:2]
     else:
-        # For conceptual questions, correct is text
         correct_text = q["correct"]
         wrong_texts = [opt for opt in q["options"] if opt != correct_text]
 
